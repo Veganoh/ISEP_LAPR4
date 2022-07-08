@@ -1,0 +1,103 @@
+{
+	"Warehouse": "Warehouse Example 1",
+	"Length": 800,
+	"Width": 720,
+	"Square": 40,
+	"Unit": "cm",
+	"Aisles":[ 
+		{ 
+			"Id":1,
+			"begin": {"lsquare":1, "wsquare":1},
+			"end": {"lsquare":3, "wsquare":1},
+			"depth":{"lsquare":3, "wsquare":1},
+			"accessibility":"w+", 
+			"rows":[ 
+				{
+					"Id":1, 
+					"begin": {"lsquare":1, "wsquare":1},
+					"end": {"lsquare":1, "wsquare":1},
+					"shelves":3
+				},
+				{
+					"Id":2, 
+					"begin": {"lsquare":2, "wsquare":1},
+					"end": {"lsquare":2, "wsquare":1},
+					"shelves":4
+				},
+				{
+					"Id":3, 
+					"begin": {"lsquare":3, "wsquare":1},
+					"end": {"lsquare":3, "wsquare":1},
+					"shelves":8
+				}
+			]
+		},
+		{ 
+			"Id":2, 
+			"begin": {"lsquare":1, "wsquare":2},
+			"end": {"lsquare":1, "wsquare":4},
+			"depth":{"lsquare":1, "wsquare":4},
+			"accessibility":"w-", 
+			"rows":[ 
+				{
+					"Id":1, 
+					"begin": {"lsquare":1, "wsquare":2},
+					"end": {"lsquare":1, "wsquare":4},
+					"shelves":5
+				}
+			]
+		},
+		{ 
+			"Id":3, 
+			"begin": {"lsquare":5, "wsquare":1},
+			"end": {"lsquare":5, "wsquare":5},
+			"depth":{"lsquare":6, "wsquare":5},
+			"accessibility":"w+", 
+			"rows":[ 
+				{
+					"Id":1, 
+					"begin": {"lsquare":5, "wsquare":1},
+					"end": {"lsquare":5, "wsquare":3},
+					"shelves":2
+				},
+				{
+					"Id":2, 
+					"begin": {"lsquare":5, "wsquare":4},
+					"end": {"lsquare":5, "wsquare":5},
+					"shelves":2
+				}
+			]
+		},
+		{ 
+			"Id":4, 
+			"begin": {"lsquare":2, "wsquare":5},
+			"end": {"lsquare":2, "wsquare":6},
+			"depth":{"lsquare":4, "wsquare":6},
+			"accessibility":"w-", 
+			"rows":[ 
+				{
+					"Id":1, 
+					"begin": {"lsquare":2, "wsquare":5},
+					"end": {"lsquare":2, "wsquare":6},
+					"shelves":4
+				}
+			]
+		}
+	],
+	"AGVDocks":[ 
+		{
+			"Id":"D1", 
+			"begin": {"lsquare":3, "wsquare":3},
+			"end": {"lsquare":3, "wsquare":3},
+			"depth":{"lsquare":3, "wsquare":3},
+			"accessibility":"l+"
+		},
+		{
+			"Id":"D2", 
+			"begin": {"lsquare":3, "wsquare":4},
+			"end": {"lsquare":3, "wsquare":4},
+			"depth":{"lsquare":3, "wsquare":4},
+			"accessibility":"l+"
+		}
+	]
+}

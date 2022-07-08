@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ANTLRGenerationPreferences">
+    <option name="perGrammarGenerationSettings">
+      <list>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/base.core/src/main/java/eapli/base/surveymanagement/application/questions.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\HP\Documents\isep\lapr4\lei21_22_s4_2dc_3\base.core\src\main\java\eapli\base\surveymanagement\application" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/base.core/src/main/java/eapli/base/surveymanagement/grammars/questions.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\HP\Documents\isep\lapr4\lei21_22_s4_2dc_3\base.core\src\main\java" />
+          <option name="libDir" value="C:\Users\HP\Documents\isep\lapr4\lei21_22_s4_2dc_3\base.core\src\main\java\eapli\base\surveymanagement\grammars" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="eapli.base.surveymanagement.application" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+      </list>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/base.app.backoffice.dashboard/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

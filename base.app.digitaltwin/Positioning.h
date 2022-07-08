@@ -1,0 +1,6 @@
+#ifndef BASE_APP_DIGITALTWIN_POSITIONING_H
+#define BASE_APP_DIGITALTWIN_POSITIONING_H
+
+void* thread_positioning(void *arg);
+
+#endif //BASE_APP_DIGITALTWIN_POSITIONING_H

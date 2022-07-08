@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+  <persistence-unit name="eapli.base">
+    <!--
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    -->
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <class>eapli.framework.infrastructure.authz.domain.model.SystemUser</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.Role</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.RoleSet</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.RoleAssignment</class>
+    <class>eapli.base.clientusermanagement.domain.ClientUser</class>
+    <class>eapli.base.clientusermanagement.domain.SignupRequest</class>
+    <class>eapli.base.agvdockmanagement.domain.AGVDock</class>
+    <class>eapli.base.agvmanagement.domain.AGV</class>
+    <class>eapli.base.agvmanagermanagement.domain.AGVManager</class>
+    <class>eapli.base.agvmanagermanagement.domain.Square</class>
+    <class>eapli.base.agvtaskmanagement.domain.AGVTask</class>
+    <class>eapli.base.customermanagement.domain.Customer</class>
+    <class>eapli.base.ordermanagement.domain.Order</class>
+    <class>eapli.base.surveymanagement.domain.Questionnaire</class>
+    <class>eapli.base.surveymanagement.domain.AnsweredQuestionnaire</class>
+    <class>eapli.base.productcategorymanagement.domain.ProductCategory</class>
+    <class>eapli.base.productmanagement.domain.Product</class>
+    <class>eapli.base.shipmentmanagement.domain.ShippingMethod</class>
+    <class>eapli.base.shoppingcartmanagement.domain.ShoppingCart</class>
+    <class>eapli.base.warehousemanagement.domain.Warehouse</class>
+    <class>eapli.base.warehousemanagement.domain.Shelf</class>
+    <class>eapli.base.warehousemanagement.domain.WarehouseEmployee</class>
+    <class>eapli.base.ordermanagement.domain.SalesClerk</class>
+    <class>eapli.base.shoppingcartmanagement.domain.ShoppingCartLineItem</class>
+    <class>eapli.base.ordermanagement.domain.OrderLineItem</class>
+
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/base"/>
+      <!--<property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://vsgate-s2.dei.isep.ipp.pt:10686/base"/>-->
+      <!--<property name="javax.persistence.jdbc.url" value="jdbc:h2:~\base;MV_STORE=FALSE;AUTO_SERVER=true;"/>-->
+
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.password" value="eapli"/>
+      <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+      <!--<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+       <property name="eclipselink.logging.level" value="FINE"/>
+      <property name = "hibernate.show_sql" value = "true" />-->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+
+    </properties>
+  </persistence-unit>
+</persistence>

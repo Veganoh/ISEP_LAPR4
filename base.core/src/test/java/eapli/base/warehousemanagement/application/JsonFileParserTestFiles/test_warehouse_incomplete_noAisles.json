@@ -1,0 +1,8 @@
+{
+  "Warehouse": "Warehouse Example 1",
+  "Length": 800,
+  "Width": 720,
+  "Square": 40,
+  "Unit": "cm",
+  "Aisles":  []
+}

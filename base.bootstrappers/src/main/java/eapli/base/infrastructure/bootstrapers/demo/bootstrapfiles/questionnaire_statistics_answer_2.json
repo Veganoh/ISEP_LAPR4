@@ -1,0 +1,342 @@
+{
+  "Document": "Answered Questionnaire",
+  "ID": "COSM22-01",
+  "Title": "Cosmetics Questionnaire",
+  "WelcomeMessage": "Hello,\nThis questionnaire aims to...\nIt takes approximately 10 minutes.\nThank you very much for your time and support.",
+  "Sections": [
+    {
+      "SectionID": 1,
+      "SectionTitle": "About You",
+      "SectionDescription": "Basic personal information",
+      "Obligatoriness": "mandatory",
+      "Repeatability": "false",
+      "Content": [
+        {
+          "QuestionID": 1,
+          "Question": "What is your gender?",
+          "Instruction": "Optionally a text with some answering instruction might be provided",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Male",
+              "Female",
+              "Other/NotSpecified"
+            ]
+          },
+          "Obligatoriness": "mandatory",
+          "Answer": "Female"
+        },
+        {
+          "QuestionID": 2,
+          "Question": "What is your age?",
+          "Instruction": "Optionally a text with some answering instruction might be provided",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65-74",
+              "75+"
+            ]
+          },
+          "Obligatoriness": "mandatory",
+          "Answer": "55-64"
+        },
+        {
+          "QuestionID": 3,
+          "Question": "Where do you live?",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "North",
+              "Center",
+              "South",
+              "Madeira",
+              "Azores"
+            ]
+          },
+          "Obligatoriness": "optional",
+          "Answer": "North"
+        }
+      ]
+    },
+    {
+      "SectionID": 2,
+      "SectionTitle": "Cosmetics Preference",
+      "SectionDescription": "An optional message highlighting some concern/purpose of the section",
+      "Obligatoriness": "mandatory",
+      "Repeatability": "false",
+      "Content": [
+        {
+          "QuestionID": 4,
+          "Question": "What kind of categories of cosmetics products are you used to buying?",
+          "Type": "Multiple Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Skin Care",
+              "Hair Care",
+              "Make-Up"
+            ],
+            "MaximumOptions": 3
+          },
+          "Obligatoriness": "mandatory",
+          "Answer": [
+            "Make-Up"
+          ]
+        }
+      ]
+    },
+    {
+      "SectionID": 3,
+      "SectionTitle": "Skin Care",
+      "Obligatoriness": "condition dependent",
+      "Condition": {
+        "SectionID": 2,
+        "QuestionID": 4,
+        "Answer": "Skin Care"
+      },
+      "Repeatability": "false",
+      "Content": [
+        {
+          "QuestionID": 5,
+          "Question": "What is your skin type?",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Oily",
+              "Normal",
+              "Dry"
+            ]
+          },
+          "Obligatoriness": "optional"
+        },
+        {
+          "QuestionID": 6,
+          "Question": "How often do you use facial creams?",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Everyday",
+              "Sometimes",
+              "Never"
+            ]
+          },
+          "Obligatoriness": "optional"
+        },
+        {
+          "QuestionID": 7,
+          "Question": "Which factors are considered as relevant to buy?",
+          "Type": "Free Text",
+          "ExtraInfo": {
+            "MaximumCharacters": 140
+          },
+          "Obligatoriness": "condition dependent",
+          "Condition": {
+            "SectionID": 3,
+            "QuestionID": 6,
+            "Answer": [
+              "Everyday",
+              "Sometimes"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "SectionID": 4,
+      "SectionTitle": "Hair Care",
+      "Obligatoriness": "condition dependent",
+      "Condition": {
+        "SectionID": 2,
+        "QuestionID": 4,
+        "Answer": "Hair Care"
+      },
+      "Repeatability": "false",
+      "Content": [
+        {
+          "QuestionID": 8,
+          "Question": "Describe the way you tend to buy shampoos and/or conditioners?",
+          "Instruction": "Tick no more than 5 factors",
+          "Type": "Multiple Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Buy products with specific hair benefits",
+              "Sometimes buy products on special offer",
+              "Tend to buy matching shampoo and conditioner",
+              "Tend to stick to well-known brands",
+              "Buy products tailored to my hair type",
+              "Happy to buy own label product",
+              "Tend to buy products recommended by friends",
+              "Tend to stock up on shampoos/conditioners"
+            ],
+            "MaximumOptions": 5
+          },
+          "Obligatoriness": "optional"
+        }
+      ]
+    },
+    {
+      "SectionID": 5,
+      "SectionTitle": "Make-Up",
+      "Obligatoriness": "condition dependent",
+      "Condition": {
+        "SectionID": 2,
+        "QuestionID": 4,
+        "Answer": "Make-Up"
+      },
+      "Repeatability": "false",
+      "Content": [
+        {
+          "QuestionID": 9,
+          "Question": "When choosing makeup products, which of the following factors matter to you?",
+          "Instruction": "Check all that apply",
+          "Type": "Multiple Choice With Input Value",
+          "ExtraInfo": {
+            "Options": [
+              "Salesperson recommendation",
+              "Product ingredients",
+              "Availability",
+              "Quality",
+              "Price"
+            ],
+            "MaximumOptions": 6
+          },
+          "Obligatoriness": "optional",
+          "Answer": [
+            "Quality",
+            "Availability",
+            "TV commercials"
+          ]
+        }
+      ]
+    },
+    {
+      "SectionID": 6,
+      "SectionTitle": "Willingness to Try and Buy",
+      "Obligatoriness": "mandatory",
+      "Repeatability": "true",
+      "Condition": {
+        "SectionID": 2,
+        "QuestionID": 4
+      },
+      "Content": [
+        {
+          "QuestionID": 10,
+          "Question": "How willing are you to try new products of a selected category?",
+          "Instruction": "Rate fom 1- Not willing to 5 - Very willing",
+          "Type": "Numeric",
+          "Obligatoriness": "mandatory",
+          "Answer": 5
+        },
+        {
+          "QuestionID": 11,
+          "Question": "How much are you to available to spend on such buy?",
+          "Instruction": "Type the amount without currency",
+          "Type": "Numeric",
+          "Obligatoriness": "mandatory",
+          "Answer": 30
+        }
+      ]
+    },
+    {
+      "SectionID": 7,
+      "SectionTitle": "Level of (Dis)Agreement",
+      "Obligatoriness": "mandatory",
+      "Repeatability": "false",
+      "Content": [
+        {
+          "QuestionID": 12,
+          "Question": "Do you agree with the following statements",
+          "Instruction": "Optionally a text with some answering instruction might be provided",
+          "Type": "Scaling Options",
+          "ExtraInfo": {
+            "Options": [
+              "Cheapest products are as good as expensive",
+              "I spend too much money on cosmetics",
+              "I find the range of available brands confusing",
+              "The only guarantee of quality is a recognizable brand",
+              "I always buy the same brands out of habit",
+              "I love trying new products"
+            ],
+            "Scale": [
+              "Strongly Agree",
+              "Agree",
+              "Neutral",
+              "Disagree",
+              "Strongly Disagree"
+            ]
+          },
+          "Obligatoriness": "optional"
+        }
+      ]
+    },
+    {
+      "SectionID": 8,
+      "SectionTitle": "Advanced Personal Data",
+      "Obligatoriness": "optional",
+      "Repeatability": "false",
+      "Content": [
+        {
+          "QuestionID": 13,
+          "Question": "What is your working status?",
+          "Instruction": "Optionally a text with some answering instruction might be provided",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Full-Time",
+              "Part-Time",
+              "Unemployed",
+              "Student",
+              "Retired"
+            ]
+          },
+          "Obligatoriness": "optional",
+          "Answer": "Full-Time"
+        },
+        {
+          "QuestionID": 14,
+          "Question": "What is your marital status?",
+          "Instruction": "Optionally a text with some answering instruction might be provided",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Single",
+              "Married",
+              "Divorced",
+              "Widowed"
+            ]
+          },
+          "Obligatoriness": "optional"
+        },
+        {
+          "QuestionID": 15,
+          "Question": "Do you have children?",
+          "Type": "Single Choice",
+          "ExtraInfo": {
+            "Options": [
+              "Yes",
+              "No"
+            ]
+          },
+          "Obligatoriness": "optional",
+          "Answer": "No"
+        },
+        {
+          "QuestionID": 16,
+          "Question": "How many children do you have?",
+          "Type": "Numeric",
+          "Obligatoriness": "condition dependent",
+          "Condition": {
+            "SectionID": 8,
+            "QuestionID": 15,
+            "Answer": "Yes"
+          }
+        }
+      ]
+    }
+  ],
+  "FinalMessage": "You have successfully completed the questionnaire. [...]\nThank you for your help."
+}

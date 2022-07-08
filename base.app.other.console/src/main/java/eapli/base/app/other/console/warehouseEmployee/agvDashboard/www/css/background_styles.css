@@ -1,0 +1,35 @@
+@font-face {
+    font-family: roboto-regular;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+  }
+
+html, body{
+    background-color: #3d3d3d;
+    padding: 0px;
+}
+
+.arrow {
+    filter: invert(.5) sepia(1) saturate(10) hue-rotate(160deg)
+}
+
+.inverted-text {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+
+    /* 	for browsers supporting webkit (such as chrome, firefox, safari etc.). */
+    -webkit-transform: rotate(180deg);
+    display: inline-block;
+
+    margin-right: 4px;
+}
+
+.alert-text {
+    background-color: rgb(255, 97, 97);
+    color: white;
+    border: 1px solid rgb(255, 57, 57);
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    font-size: 20px;
+    font-family: "roboto-regular";  
+}
